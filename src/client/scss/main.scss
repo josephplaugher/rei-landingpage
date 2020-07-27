@@ -1,0 +1,74 @@
+@import 'center.scss';
+@import 'fonts.scss';
+
+// common to desktop and mobile
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #9aa0a5;
+}
+
+#container {
+    background-color: #9aa0a5;
+    width: 100%;
+}
+
+#content {
+    background-color: white;
+    margin: 30px;
+}
+
+.subheadline {
+    font-family: sans-serif;
+    color: $main-font-color;
+    font-size: $main-font-size;
+    margin: 25px 0px 5px 0px;
+}
+
+.text {
+    font-family: sans-serif;
+    color: $main-font-color;
+    font-size: $main-font-size;
+}
+
+.list {
+    font-family: sans-serif;
+    color: $main-font-color;
+    font-size: $main-font-size;
+}
+
+.nav,
+.nav-mobile {
+    a,
+    a:visited {
+        font-family: sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:active,
+    a:hover {
+        font-family: sans-serif;
+        text-decoration: none;
+        color: $logoGreen;
+    }
+}
+
+.list {
+    a,
+    a:visited,
+    a:active {
+        font-family: sans-serif;
+        color: $main-font-color;
+        text-decoration: none;
+    }
+
+    a:hover {
+        font-family: sans-serif;
+        color: $logoGreen;
+        text-decoration: none;
+    }
+}

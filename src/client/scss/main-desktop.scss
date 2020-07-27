@@ -1,0 +1,92 @@
+@import 'center.scss';
+@import 'fonts.scss';
+
+// only on desktop
+@media screen and (min-width: 701px) {
+    .nav-mobile,
+    #image-header-mobile,
+    #nav-container-mobile {
+        display: none;
+    }
+
+    #container {
+        display: grid;
+        grid-template-columns: 15% 15% auto 15% 15%;
+        grid-template-rows: 5% 30% auto 5%;
+    }
+
+    #image-header-desktop {
+        background-color: white;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    img {
+        width: 30%;
+    }
+
+    #nav-container {
+        @include center(row);
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: $main-font-color;
+    }
+
+    .nav {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: $main-font-color;
+        cursor: pointer;
+        border-right: 0px;
+        border-left: 0px;
+        padding: 5px 20px;
+        color: white;
+        font-size: 20px;
+    }
+
+    #content {
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 3;
+        grid-row-end: 3;
+        border-radius: 5px;
+        padding: 25px 55px 55px 55px;
+    }
+
+    #request-box {
+        grid-column-start: 5;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+
+    #request-info-button {
+        font-size: $header-font-size;
+        color: $main-font-color;
+        cursor: pointer;
+        height: 90px;
+        margin-top: -9px;
+        line-height: 25px;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        border-color: $main-font-color;
+        border-style: solid;
+        border-width: 2px;
+    }
+
+    .headline {
+        font-family: sans-serif;
+        color: $main-font-color;
+        font-size: $header-font-size;
+        margin-bottom: 50px;
+    }
+}
